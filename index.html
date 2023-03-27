@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Convert Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://unpkg.com/imask"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script defer src="index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <img class="header__burger" src="./img/header/burger.svg" alt="">
+            <a class="logo header__logo" href="#">
+                LOGO
+            </a>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <img class="menu__list-icon-close" src="./img/header/icon-close.svg" alt="close">
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Home</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Careers</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">FAQ</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link" href="#">Customers</a>
+                    </li>
+                    <li class="menu__list-item">
+                        <a class="menu__list-link menu__list-link_form" href="#">Open Modal
+                            <img class="menu__list-item-icon" src="./img/header/header__arrow.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="header__form-wrapper">
+                <div class="header__form-inner">
+                    <img class="header__form-icon-close" src="./img/header/icon-close.svg" alt="close">
+                    <h2 class="header__form-title">Have a Question ?<br>
+                        Let’s Get in Touch with us 👋
+                    </h2>
+                    <p class="header__form-description">Fill up the form and the team will get back to within 24 hrs</p>
+                    <form class="header__form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
+                        <label class="header__form-label">
+                            Name
+                            <input class="header__form-input" type="text" placeholder="your name" name="fullname"
+                                required>
+                        </label>
+                        <label class="header__form-label">
+                            E-mail *
+                            <input class="header__form-input" type="text" placeholder="mail@example.com" name="E-mail"
+                                required>
+                        </label>
+                        <label class="header__form-label">
+                            Phone *
+                            <input class="header__form-input header__form-input-tel" type="text"
+                                placeholder="+7 (___) ___-__-__" name="tel" required>
+                        </label>
+                        <label class="header__form-label">
+                            Messege
+                            <input class="header__form-input" type="text" placeholder="Type your Messege" name="message"
+                                required>
+                        </label>
+                        <button class="btn header__form-button" type="submit">
+                            <img class="btn-img header__form-button-img" src="./img/top/button__shapes.svg" alt="">
+                            <p class="btn-description header__form-button-description">Send Messege</p>
+                            <img class="header__form-button-icon" src="./img/header/form__arrow.svg" alt="">
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="top">
+            <div class="container top__container">
+                <div class="top__content">
+                    <h1 class="top__content-title">Transform Your Idea Into Reality with Finsweet</h1>
+                    <p class="top__content-description">The entire Finsweet team knows what's good with Webflow and <br
+                            class="top__content-description_br">
+                        you can too with 1 week and a good attitude.</p>
+                    <a class="top__content-link" href="#">
+                        <button class="btn top__content-button">
+                            <img class="btn-img top__content-button-img" src="./img/top/button__shapes.svg" alt="">
+                            <p class="btn-description top__content-button-description">Request Quote</p>
+                            <img class="top__content-button-icon" src="./img/top/arrow.svg" alt="">
+                        </button>
+                    </a>
+                </div>
+                <div class="top__img-container">
+                    <img class="top__img-shapes-small" src="./img/top/img__shapes_small.svg" alt="">
+                    <img class="top__img" src="./img/top/office.jpg" alt="">
+                    <img class="top__img-shapes-big" src="./img/top/img__shapes_big.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="container hero__container">
+                <img class="hero__container-shapes" src="./img/hero/hero__shapes.svg" alt="">
+                <div class="hero__content">
+                    <h2 class="hero__content-title">
+                        <center>We hired people who are
+                            Always Passionate about what they do </center>
+                    </h2>
+                    <p class="hero__content-description">
+                        <center>Through True Rich Attended does no end it his mother since real
+                            had
+                            half every him case in packages enquire we up ecstatic unsatiable saw .</center>
+                    </p>
+                </div>
+                <img class="hero__img" src="./img/hero/word.jpg" alt="">
+            </div>
+        </section>
+        <section class="details">
+            <div class="container">
+                <div class="details__container">
+                    <div class="details__tabs-wrapper">
+                        <div class="details__tabs-container">
+                            <p class="details__tab-item details__tab-item_one details__tab-item_active" data-path="one">
+                                Details</p>
+                            <p class="details__tab-item details__tab-item_two" data-path="two">Requirements</p>
+                            <p class="details__tab-item details__tab-item_three" data-path="three">Responsibilities
+                            </p>
+                        </div>
+                    </div>
+                    <div class="details__content">
+                        <ul class="details__list details__list_one details__list_active" data-target="one">
+                            <li class="details__list-item">
+                                Create and edit video content for multi-platform use and distribution for social media
+                                channels
+                                (Facebook, Youtube, Instagram, Snapchat, IGTV, Facebook Stories and Instagram Stories).
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Design & Create highly engaging industry-related content in both photo, gif & video
+                                format
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Publish Posts on various social media channels
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Promote content on social networks and monitor engagement (e.g. comments and shares)
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Research industry-related topics
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Editing audio and sound design on projects
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Engage in opportunities to develop original content and concepts for web and mobile
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Create motion graphics and animations using 2D and 3D applications for marketing and
+                                promotional
+                                usage.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Manage the day-to-day handling of all social media channels such as LinkedIn, Facebook,
+                                Twitter,
+                                Pinterest, Instagram, Tiktok and YouTube, adapting content to suit different channels
+                            </li>
+                        </ul>
+                        <ul class="details__list details__list_two" data-target="two">
+                            <li class="details__list-item">
+                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit enim id alias!
+                                Reiciendis eligendi dignissimos pariatur quod sit est reprehenderit ducimus alias
+                                distinctio, cumque deleniti vero omnis sequi, ullam molestias!
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam aliquam maiores
+                                quia esse necessitatibus ipsum nihil iusto magni. Sapiente cumque ad ab similique id
+                                exercitationem reprehenderit temporibus perspiciatis placeat.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает
+                                сосредоточиться.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное
+                                заполнение шаблона.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые
+                                модификации
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Lorem ipsum dolor sit amet.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                amet fuga rem distinctio eos vel eum.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                applications for marketing and
+                                promotional
+                                usage.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                dolore dignissimos a recusandae nostrum sed provident voluptatem aperiam corporis
+                                quaerat non deserunt placeat! Laboriosam!
+                            </li>
+                        </ul>
+                        <ul class="details__list details__list_three" data-target="three">
+                            <li class="details__list-item">
+                                Aliquet nibh praesent tristique magna.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Ut venenatis tellus in metus vulputate eu scelerisque felis imperdiet.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Est lorem ipsum dolor sit. Pharetra et ultrices neque ornare aenean euismod elementum
+                                nisi.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Elit sed vulputate mi sit amet. Hac habitasse platea dictumst quisque sagittis purus sit
+                                amet volutpat. Ridiculus mus mauris vitae ultricies leo integer malesuada.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Research industry-related topics
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Editing audio and sound design on projects
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Diam quam nulla porttitor massa id neque aliquam vestibulum morbi.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Amet massa vitae tortor condimentum lacinia quis vel eros donec. Tempus iaculis urna id
+                                volutpat lacus. In pellentesque massa placerat duis.
+                            </li>
+                            <br>
+                            <li class="details__list-item">
+                                Nibh praesent tristique magna sit amet purus. Risus commodo viverra maecenas accumsan
+                                lacus vel.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__inner">
+                            <img class="swiper-slide__comma" src="./img/testimonials/Comma.svg" alt="">
+                            <img class="swiper-slide__shapes" src="./img/testimonials/testimonials-shapes.svg" alt="">
+                            <div class="swiper-slide__container">
+                                <p class="swiper-slide__comment">
+                                    Finsweet has been a wonderful partner to work with. I have been a customer now for
+                                    the
+                                    past few months now and I have had nothing but positive experiences!
+                                </p>
+                                <div class="swiper-slide__person-wrapper">
+                                    <img class="swiper-slide__avatar" src="./img/testimonials/avatar-1.jpg" alt="">
+                                    <div class="swiper-slide__person-about">
+                                        <p class="swiper-slide__fullname">Johnny Andro</p>
+                                        <p class="swiper-slide__duty">Director, Company</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__inner">
+                            <img class="swiper-slide__comma" src="./img/testimonials/Comma.svg" alt="">
+                            <img class="swiper-slide__shapes" src="./img/testimonials/testimonials-shapes.svg" alt="">
+                            <div class="swiper-slide__container">
+                                <p class="swiper-slide__comment">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos sed esse qui similique
+                                    voluptatibus omnis velit dolorem ullam magni neque, suscipit
+                                </p>
+                                <div class="swiper-slide__person-wrapper">
+                                    <img class="swiper-slide__avatar" src="./img/testimonials/avatar-2.jpg" alt="">
+                                    <div class="swiper-slide__person-about">
+                                        <p class="swiper-slide__fullname">Elizabet Mars</p>
+                                        <p class="swiper-slide__duty">Worker, Company</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="swiper-slide__inner">
+                            <img class="swiper-slide__comma" src="./img/testimonials/Comma.svg" alt="">
+                            <img class="swiper-slide__shapes" src="./img/testimonials/testimonials-shapes.svg" alt="">
+                            <div class="swiper-slide__container">
+                                <p class="swiper-slide__comment">
+                                    Adipisicing elit. Ullam reiciendis nobis ex
+                                    deserunt, possimus voluptates similique debitis eveniet,
+                                    rem deleniti iste, non consequuntur. Sunt recusandae voluptatum sapiente?
+                                </p>
+                                <div class="swiper-slide__person-wrapper">
+                                    <img class="swiper-slide__avatar" src="./img/testimonials/avatar-3.jpg" alt="">
+                                    <div class="swiper-slide__person-about">
+                                        <p class="swiper-slide__fullname">Mark Sando</p>
+                                        <p class="swiper-slide__duty">Seller</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination__wrapper">
+                <div class="swiper-pagination" id="swiper-pagination"></div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__left">
+                <a class="logo footer__logo" href="#">
+                    LOGO
+                </a>
+                <p class="footer__copyright">©2023 Finsweet</p>
+            </div>
+            <ul class="footer__social">
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img class="footer__social-icon" src="./img/footer/facebook.svg" alt="facebook">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img class="footer__social-icon" src="./img/footer/twitter.svg" alt="twitter">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img class="footer__social-icon" src="./img/footer/instagram.svg" alt="instagram">
+                    </a>
+                </li>
+                <li class="footer__social-item">
+                    <a href="#" class="footer__social-link">
+                        <img class="footer__social-icon" src="./img/footer/linkedin.svg" alt="linkedin">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
