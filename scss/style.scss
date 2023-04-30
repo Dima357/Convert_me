@@ -113,8 +113,35 @@ a {
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.12);
         z-index: 10;
     }
+    
+    @keyframes header__form_open {
+        from {
+            transform: translateX(100%);
+        }
+
+        to {
+            transform: translateX(0);
+        }
+
+    }
 
     &__form_open {
+        animation: header__form_open 1s ease-in-out;
+        display: block;
+    }
+    
+    @keyframes header__form_close {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    &__form_close {
+        animation: header__form_close 1s ease-in-out;
         display: block;
     }
 
