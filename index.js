@@ -32,7 +32,10 @@ window.addEventListener("DOMContentLoaded", () => {
     // Закрытие меню
     const headerMenuIcon = document.querySelector('.menu__list-icon-close');
     headerMenuIcon.addEventListener('click', () => {
-        headerMenu.classList.remove('menu_burger');
+        headerMenu.classList.add('menu_burger_close');
+        setTimeout(() => {
+            headerMenu.classList.remove('menu_burger', 'menu_burger_close');
+        }, 1000);
     });
 
     // Обработчики для формы
