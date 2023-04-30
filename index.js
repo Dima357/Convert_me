@@ -44,7 +44,10 @@ window.addEventListener("DOMContentLoaded", () => {
 
     const headerFormClose = document.querySelector('.header__form-icon-close');
     headerFormClose.addEventListener('click', () => {
-        headerFormContainer.classList.remove('header__form_open');
+        headerFormContainer.classList.add('header__form_close');
+        setTimeout(() => {
+            headerFormContainer.classList.remove('header__form_open', 'header__form_close');
+        }, 1000);
     });
 
     // Маска номера телефона для input
