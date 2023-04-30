@@ -726,8 +726,18 @@ a {
     .menu {
         display: none;
         height: auto;
+        
+        @keyframes menu_burger {
+            from {
+                transform: translateX(-100%);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
 
         &_burger {
+            animation: menu_burger 1s ease-in-out;
             position: absolute;
             top: 0;
             left: 0;
@@ -736,6 +746,19 @@ a {
             background-color: #8a8fea;
             border-radius: 0 0 15px 15px;
             z-index: 10;
+        }
+        
+        @keyframes menu_burger_close {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-100%);
+            }
+        }
+
+        &_burger_close {
+            animation: menu_burger_close 1s ease-in-out;
         }
 
         &__list {
